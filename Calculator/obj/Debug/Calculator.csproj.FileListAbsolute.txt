@@ -1,0 +1,2 @@
+c:\users\bigpc\documents\visual studio 2015\Projects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\BigPC\Documents\GitHub\Calculator\Calculator\bin\Debug\Calculator.exe.config
