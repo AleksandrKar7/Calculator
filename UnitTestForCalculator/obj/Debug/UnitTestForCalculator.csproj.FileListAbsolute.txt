@@ -1,0 +1,7 @@
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\bin\Debug\UnitTestForCalculator.dll
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\bin\Debug\UnitTestForCalculator.pdb
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\bin\Debug\Calculator.exe
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\bin\Debug\Calculator.pdb
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\obj\Debug\UnitTestForCalculator.csprojResolveAssemblyReference.cache
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\obj\Debug\UnitTestForCalculator.dll
+C:\Users\BigPC\Documents\GitHub\Calculator\UnitTestForCalculator\obj\Debug\UnitTestForCalculator.pdb

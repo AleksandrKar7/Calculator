@@ -5,8 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Calculator" MinHeight="502" MinWidth="324" Height="502" Width="324" Opacity="0.9" Background="#D3D3D3">
     <Grid>
-        
+        <Button x:Name="Btn_menu" Background="#D3D3D3" Height="40" Width="40" Content="≡" FontSize="40" Padding="0,-13,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="TBtn_Type" HorizontalAlignment="Left" FontSize="22" Margin="45,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Обычный"/></TextBlock>
+        <Button x:Name="Btn_UnderWindows" Background="#D3D3D3" Height="40" Width="40"  FontSize="40" Padding="0,0,0,0" Margin="148,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image x:Name="Img_UnderWindows" Height="16" Width="16" Source="C:\Users\BigPC\Documents\GitHub\Calculator\Calculator\Pictures\UnderWindows.png"/>
+        </Button>
+        <Button x:Name="Btn_History" Background="#D3D3D3" Height="40" Width="40" FontSize="40" Padding="0,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Image x:Name="Img_History" Height="20" Width="20" Source="C:\Users\BigPC\Documents\GitHub\Calculator\Calculator\Pictures\History.png"/>
+        </Button>
+        <TextBlock x:Name="TB_Second" FontSize="22" Margin="4,45,4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55"/>
+        <TextBlock x:Name="TB_Main" FontSize="22" Margin="4,100,4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55"/>
+
+        <Grid Margin="4,161,4,4">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Btn_Percent" Background="#F2F2F2" Content="%" FontSize="25" Padding="0,-5,0,0" Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="Btn_SquareRoot" Background="#F2F2F2" Content="√x" FontSize="25" Padding="0,-5,0,0" Grid.Row="0" Grid.Column="1"/>
+            <Button x:Name="Btn_SquareDegree" Background="#F2F2F2" Content="x²" FontSize="25" Padding="0,-5,0,0" Grid.Row="0" Grid.Column="2"/>
+            <Button x:Name="Btn_Reverse" Background="#F2F2F2" Content="1/x" FontSize="25" Padding="0,-5,0,0" Grid.Row="0" Grid.Column="3"/>
+
+            <Button x:Name="Btn_ClearAll" Background="#F2F2F2" Content="CE" FontSize="25" Padding="0,-5,0,0"  Grid.Row="1" Grid.Column="0"/>
+            <Button x:Name="Btn_Clear" Background="#F2F2F2" Content="C" FontSize="25" Padding="0,-5,0,0"  Grid.Row="1" Grid.Column="1" Click="Btn_Clear_Click"/>
+            <Button x:Name="Btn_Backspace" Background="#F2F2F2" FontSize="25" Padding="0,0,0,0"  Grid.Row="1" Grid.Column="2" Click="Btn_Backspace_Click">
+                <Image x:Name="Img_Backspace" Height="25" Source="C:\Users\BigPC\Documents\GitHub\Calculator\Calculator\Pictures\Backspace.png"/>
+            </Button>
+            <Button x:Name="Btn_Divide" Background="#F2F2F2" Content="/" FontSize="25" Padding="0,-5,0,0"  Grid.Row="1" Grid.Column="3" Click="Btn_Divide_Click"/>
+
+            <Button x:Name="Btn_Seven" Background="White" Opacity="1" Content="7" FontSize="25" Padding="0,-5,0,0"  Grid.Row="2" Grid.Column="0" Click="Btn_Seven_Click"/>
+            <Button x:Name="Btn_Eight" Background="White" Opacity="1" Content="8" FontSize="25" Padding="0,-5,0,0"  Grid.Row="2" Grid.Column="1" Click="Btn_Eight_Click"/>
+            <Button x:Name="Btn_Nine" Background="White" Opacity="1" Content="9" FontSize="25" Padding="0,-5,0,0"  Grid.Row="2" Grid.Column="2" Click="Btn_Nine_Click"/>
+            <Button x:Name="Btn_Multi" Background="#F2F2F2" Content="*" FontSize="25" Padding="0,-5,0,0"  Grid.Row="2" Grid.Column="3" Click="Btn_Multi_Click"/>
+
+            <Button x:Name="Btn_Four" Background="White" Opacity="1" Content="4" FontSize="25" Padding="0,-5,0,0" Grid.Row="3" Grid.Column="0" Click="Btn_Four_Click"/>
+            <Button x:Name="Btn_Five" Background="White" Opacity="1" Content="5" FontSize="25" Padding="0,-5,0,0" Grid.Row="3" Grid.Column="1" Click="Btn_Five_Click"/>
+            <Button x:Name="Btn_Six" Background="White" Opacity="1" Content="6" FontSize="25" Padding="0,-5,0,0" Grid.Row="3" Grid.Column="2" Click="Btn_Six_Click"/>
+            <Button x:Name="Btn_Minus" Background="#F2F2F2" Content="-" FontSize="25" Padding="0,-5,0,0" Grid.Row="3" Grid.Column="3" Click="Btn_Minus_Click"/>
+
+            <Button x:Name="Btn_One" Background="White" Opacity="1" Content="1" FontSize="25" Padding="0,-5,0,0" Grid.Row="4" Grid.Column="0" Click="Btn_One_Click"/>
+            <Button x:Name="Btn_Two" Background="White" Opacity="1" Content="2" FontSize="25" Padding="0,-5,0,0" Grid.Row="4" Grid.Column="1" Click="Btn_Two_Click"/>
+            <Button x:Name="Btn_Three" Background="White" Opacity="1" Content="3" FontSize="25" Padding="0,-5,0,0" Grid.Row="4" Grid.Column="2" Click="Btn_Three_Click"/>
+            <Button x:Name="Btn_Plus" Background="#F2F2F2" Content="+" FontSize="25" Padding="0,-5,0,0" Grid.Row="4" Grid.Column="3" Click="Btn_Plus_Click"/>
+
+            <Button x:Name="Btn_ChangeAction" Content="±" FontSize="25" Padding="0,-5,0,0" Grid.Row="5" Grid.Column="0"/>
+            <Button x:Name="Btn_Zero" Background="White" Opacity="1" Content="0" FontSize="25" Padding="0,-5,0,0" Grid.Row="5" Grid.Column="1" Click="Btn_Zero_Click"/>
+            <Button x:Name="Btn_Dote" Background="#F2F2F2" Content="." FontSize="25" Padding="0,-5,0,0" Grid.Row="5" Grid.Column="2" Click="Btn_Dote_Click"/>
+            <Button x:Name="Btn_Equals" Background="#F2F2F2" Content="=" FontSize="25" Padding="0,-5,0,0" Grid.Row="5" Grid.Column="3"/>
+        </Grid>
     </Grid>
 </Window>
